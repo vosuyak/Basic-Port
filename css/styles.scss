@@ -4,7 +4,6 @@ body{
 }
 section{
     background: lightblue;
-    padding: 2em;
     height: 100vh;
     position: relative;
     width: 100vw;
@@ -13,6 +12,12 @@ section{
     -webkit-height: 100vh;
     background: black url(../images/meleftdesk.jpg) no-repeat center;
     background-size: cover;
+    .background-splash{
+        padding: 2em;        
+        background:rgba(113, 0, 0, 0.3);
+        width:100%;
+        height:100%;
+    }
 }
 nav{
     position: relative;
@@ -40,7 +45,11 @@ nav{
             width: 33%;
             text-align: center;
             a{
-
+            &:hover{
+                background:none;
+                border:none;
+                font-weight:bold;
+            }
                 text-transform: uppercase;
                 color: white;
             }
